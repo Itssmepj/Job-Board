@@ -6,7 +6,13 @@ require("dotenv").config();
 
 // middleware
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://deploy-mern-1whq.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
 
 // user: sachinstha977
 // password: YytbizvTJKPa2SBU;
