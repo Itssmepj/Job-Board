@@ -8,10 +8,6 @@ require("dotenv").config();
 app.use(express.json());
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.json("Hello");
-});
-
 // user: sachinstha977
 // password: YytbizvTJKPa2SBU;
 
