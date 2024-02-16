@@ -14,6 +14,10 @@ app.use(
   })
 );
 
+app.get("/", (req,res)=>{
+  res.json("Hello");
+})
+
 // user: sachinstha977
 // password: YytbizvTJKPa2SBU;
 
